@@ -9,17 +9,16 @@ source:
 
 requirements:
   build:
-    - python
-    - openblas
     - libgfortran
-    - numpy 1.8*
+    - openblas
+    - python
+    - numpy x.x
 
   run:
-    - libgcc
     - libgfortran
-    - python
     - openblas
-    - numpy
+    - python
+    - numpy x.x
 
 build:
   string: np{{ np }}py{{ py }}_0
